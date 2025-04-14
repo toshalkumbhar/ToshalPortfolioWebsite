@@ -1,0 +1,446 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    
+    <!-- Add this at the beginning of the body tag, before any other content -->
+<div id="loading-screen">
+  <div class="loading-content">
+    <div class="welcome-text">
+      <span class="welcome-word">Hello</span>
+      <span class="welcome-word">Hallo</span>
+      <span class="welcome-word">Namaste</span>
+    </div>
+    <div class="loader"></div>
+  </div>
+</div>
+
+<!-- Keep the rest of your HTML content the same -->
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Toshal Kumbhar | My Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="mediaqueries.css" />
+  </head>
+  <body>
+    <nav id="desktop-nav">
+      <div class="logo">Toshal Kumbhar</div>
+      <div>
+        <ul class="nav-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#certificates">Certificates</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+    <nav id="hamburger-nav">
+      <div class="logo">Toshal Kumbhar</div>
+      <div class="hamburger-menu">
+        <div class="hamburger-icon" onclick="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div class="menu-links">
+          <li><a href="#about" onclick="toggleMenu()">About</a></li>
+          <li><a href="#skills" onclick="toggleMenu()">Skills</a></li>
+          <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+          <li><a href="#certificates" onclick="toggleMenu()">Certificates</a></li>
+          <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+        </div>
+      </div>
+    </nav>
+    <section id="profile">
+      <div class="section__pic-container">
+        <img src="./assets/profile-pic.png" alt="Toshal Kumbhar profile picture" />
+      </div>
+      <div class="section__text">
+        <p class="section__text__p1">Hello, I'm</p>
+        <h1 class="title">Toshal Kumbhar</h1>
+        <p class="section__text__p2">Electronics and Communication Engineer</p>
+        <div class="btn-container">
+          <button
+            class="btn btn-color-2"
+            onclick="window.open('./assets/resume-example.pdf')"
+          >
+            Download Resume
+          </button>
+          <button class="btn btn-color-1" onclick="location.href='./#contact'">
+            Contact Info
+          </button>
+        </div>
+        <div id="socials-container">
+          <img
+            src="./assets/linkedin.png"
+            alt="My LinkedIn profile"
+            class="icon"
+            onclick="location.href='https://linkedin.com/'"
+          />
+          <img
+            src="./assets/github.png"
+            alt="My Github profile"
+            class="icon"
+            onclick="location.href='https://github.com/'"
+          />
+        </div>
+      </div>
+    </section>
+    <section id="about">
+      <p class="section__text__p1">Get To Know More</p>
+      <h1 class="title">About Me</h1>
+      <div class="section-container">
+        <div class="section__pic-container">
+          <img
+            src="./assets/about-pic.jpg"
+            alt="Profile picture"
+            class="about-pic"
+          />
+        </div>
+        <div class="about-details-container">
+          <div class="about-containers">
+            <div class="details-container">
+              <img
+                src="./assets/experience.png"
+                alt="Experience icon"
+                class="icon"
+              />
+              <h3>Experience</h3>
+              <p><br />Worked on TinyML Model</p>
+            </div>
+            <div class="details-container">
+              <img
+                src="./assets/education.png"
+                alt="Education icon"
+                class="icon"
+              />
+              <h3>Education</h3>
+              <p>BTech in Electronics and Communication Engineering</p>
+            </div>
+          </div>
+          <div class="text-container">
+            <p>
+              Electronics and Communication Engineering student with expertise in Embedded
+              Systems and AI/ML for Edge Computing. Skilled in Embedded C, C++, and
+              Python, with hands-on Skills in STM32, ESP32, and TinyML. Passionate
+              about hardware-software co-design, low-power AI applications, and optimizing
+              embedded systems for real-world impact
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="skills">
+      <p class="section__text__p1">Explore My</p>
+      <h1 class="title">Skills</h1>
+      <div class="Skills-details-container">
+        <div class="about-containers">
+          <div class="details-container">
+            <h2 class="Skills-sub-title">Languages and Softwares</h2>
+            <div class="article-container">
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Skills icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Embedded C</h3>
+                  <p>Experienced</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Skills icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>C++</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Skills icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Java</h3>
+                  <p>Experienced</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Skills icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Kicad</h3>
+                  <p>Basic</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Skills icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Python (For ML Applications)</h3>
+                  <p>Basic</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Skills icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>TensorFlow Lite</h3>
+                  <p>Experienced</p>
+                </div>
+              </article>
+            </div>
+          </div>
+          <div class="details-container">
+            <h2 class="Skills-sub-title"></h2>
+            <div class="article-container">
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Skills icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>MATLAB</h3>
+                  <p>Experienced</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Skills icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Silicon Labs</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Skills icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>STM 32 Cube IDE</h3>
+                  <p>Experienced</p>
+                </div>
+              </article>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+
+      <!-- Add this after the projects section and before the contact section -->
+<section id="certificates">
+  <p class="section__text__p1">Check Out My</p>
+  <h1 class="title">Certificates</h1>
+  
+  <div class="certificates-container">
+    <div class="certificate-container">
+      <img
+        src="./assets/matlab-onramp.png"
+        alt="Certificate 1"
+        class="certificate-img"
+        onclick="openCertificateModal(this.src, 'MATLAB Onramp')"
+      />
+      <h3 class="certificate-title">MATLAB Onramp</h3>
+    </div>
+    
+    <div class="certificate-container">
+      <img
+        src="./assets/signal-processing-onramp.png"
+        alt="Certificate 2"
+        class="certificate-img"
+        onclick="openCertificateModal(this.src, 'Signal Processing Onramp')"
+      />
+      <h3 class="certificate-title">Signal Processing Onramp</h3>
+    </div>
+    
+    <div class="certificate-container">
+      <img
+        src="./assets/spoken-tutorial-python.png"
+        alt="Certificate 3"
+        class="certificate-img"
+        onclick="openCertificateModal(this.src, 'IIT Bombay Arduino Training')"
+      />
+      <h3 class="certificate-title">IIT Bombay Arduino Training</h3>
+    </div>
+  </div>
+</section>
+
+<!-- Certificate Modal -->
+<div id="certificateModal" class="certificate-modal">
+  <span class="close-modal" onclick="closeCertificateModal()">&times;</span>
+  <div class="modal-content">
+    <img id="modalCertificateImg" class="modal-certificate-img">
+    <div id="modalCertificateTitle" class="modal-certificate-title"></div>
+  </div>
+</div>
+
+<!-- The navigation links updates remain the same as before -->
+</section>
+<section id="projects">
+  <p class="section__text__p1">Browse My Recent</p>
+  <h1 class="title">Projects</h1>
+  <div class="Skills-details-container">
+    <div class="about-containers">
+      <div class="details-container color-container">
+        <div class="article-container">
+          <img
+            src="./assets/project-1.png"
+            alt="Project 1"
+            class="project-img"
+          />
+        </div>
+        <h2 class="Skills-sub-title project-title">GAS / SMOKE DETECTION SYSTEM USING ARDUINO UNO</h2>
+        <div class="btn-container">
+          <button
+        class="btn btn-color-2"
+        onclick="window.open('./assets/toshal-project-1-report.pdf')"
+      >
+        Report
+      </button>
+      
+            </div>
+          </div>
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/project-2.png"
+                alt="Project 2"
+                class="project-img"
+              />
+            </div>
+            <h2 class="Skills-sub-title project-title">Motion Detection Security Camera Using ESP-32 CAMs</h2>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="window.open('./assets/toshal-project-2-report.pdf')"
+              >
+                 Report
+              </button>
+              
+            </div>
+          </div>
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/project-3.png"
+                alt="Project 3"
+                class="project-img"
+              />
+            </div>
+            <h2 class="Skills-sub-title project-title">Dynamic route rationalization model based on AI/ML</h2>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="window.open('./assets/toshal-project-3-report.pdf')"
+              >
+                Report
+              </button>
+             
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <section id="contact">
+        <p class="section__text__p1">Get in Touch</p>
+        <h1 class="title">Contact Me</h1>
+    
+        <form id="contactForm" class="contact-form">
+          <input type="text" name="name" placeholder="Your Name" required />
+          <input type="email" name="email" placeholder="Your Email" required />
+          <textarea name="message" placeholder="Your Message" rows="5" required></textarea>
+          <button class="btn btn-color-1" type="submit">Send</button>
+        </form>
+      </section>
+    
+      <script>
+        document.getElementById("contactForm").addEventListener("submit", function(e) {
+          e.preventDefault();
+    
+          const form = e.target;
+          const data = {
+            timestamp: new Date().toISOString(),  // Add the timestamp
+            name: form.name.value,
+            email: form.email.value,
+            message: form.message.value
+          };
+    
+          // Replace this with your own deployed Web App URL
+          const scriptURL = "https://script.google.com/macros/s/AKfycbxCpnbBbv7GloI7M3n793N_XNczudOoVDodl6ozX3tiSjq_euvNjNC565EB7itILs_UeQ/exec";
+    
+          fetch(scriptURL, {
+            method: "POST",
+            mode: "no-cors",
+            body: JSON.stringify(data),
+            headers: {
+              "Content-Type": "application/json"
+            }
+          })
+          .then(() => {
+            alert("Message sent successfully!");
+            form.reset();
+          })
+          .catch((error) => {
+            console.error("Error sending message:", error);
+            alert("There was an error sending your message.");
+          });
+        });
+      </script>
+<div class="contact-info-upper-container">
+  <div class="contact-info-container">
+    <img
+      src="./assets/email.png"
+      alt="Email icon"
+      class="icon contact-icon email-icon"
+    />
+    <p><a href="mailto:examplemail@gmail.com">toshalkumbhar8979@gmail.com</a></p>
+  </div>
+  <div class="contact-info-container">
+    <img
+      src="./assets/linkedin.png"
+      alt="LinkedIn icon"
+      class="icon contact-icon"
+    />
+    <p><a href="https://www.linkedin.com">LinkedIn</a></p>
+  </div>
+</div>
+</section>
+<footer>
+<nav>
+        <div class="nav-links-container">
+          <ul class="nav-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#certificates">Certificates</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+      </nav>
+      <p>Copyright &#169; 2025 Toshal Kumbhar. All Rights Reserved.</p>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>
